@@ -23,7 +23,7 @@ export default function ExperienceSection() {
 const careerData = [
   {
     id: 1,
-    role: "Estagiário em Desenvolvimento Full Stack (Híbrido)",
+    role: "Estagiário em Desenvolvimento Front-end",
     company: "Senai",
     period: "Maio 2025 – Novembro 2025",
     responsibilities: [
@@ -48,7 +48,7 @@ const careerData = [
     id: 2,
     role: "Residente em Desenvolvimento de Software",
     company: "Porto Digital",
-    period: "Fevereiro 2025 – Presente",
+    period: "Fevereiro 2024 – Presente",
     responsibilities: [
       "Colaboração em projetos de desenvolvimento de software, atuando como Full Stack, QA, Designer e Líder de Projeto (organização de tarefas via Trello).",
       "Criação de protótipos de interfaces web e mobile utilizando Figma, priorizando a experiência do usuário.",
