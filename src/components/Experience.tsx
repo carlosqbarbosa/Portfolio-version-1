@@ -48,7 +48,7 @@ const careerData = [
     id: 2,
     role: "Residente em Desenvolvimento de Software",
     company: "Porto Digital",
-    period: "Fevereiro 2024 – Presente",
+    period: "Fevereiro 2024 – Dezembro 2025",
     responsibilities: [
       "Colaboração em projetos de desenvolvimento de software, atuando como Full Stack, QA, Designer e Líder de Projeto (organização de tarefas via Trello).",
       "Criação de protótipos de interfaces web e mobile utilizando Figma, priorizando a experiência do usuário.",

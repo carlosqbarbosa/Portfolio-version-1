@@ -67,13 +67,15 @@ export default function About() {
               "Java / Python",
               "HTML / CSS",
 
-              // ** Frameworks Front-end **
-              "React / Next.js",
+              // ** Frameworks **
+              "React / Next.js / Nest.js",
               "Angular / Vue.js",
-              "Quasar / Material UI",
+              "Express.js",
+              "Python Flask/Djando",
               
               // ** Estilização e Design **
               "Tailwind CSS / Bootstrap",
+              "Quasar / Material UI",
               "Desenvolvimento Responsivo",
               "Figma / Otimização Visual", 
               
@@ -81,11 +83,12 @@ export default function About() {
               "APIs RESTful (Integração)",
               "Testes Unitários (Jest/JUnit)",
               "Git / GitHub (Versionamento)",
+              "Postman / Swagger",
+              "DBeaver/ MySQL Workbench/ MongoDB Compass/ Mongoose/ Nodemon ",
 
               // ** Ferramentas e Colaboração **
               "Jira / Trello (Gestão Ágil)",
               "Colaboração com DevOps",
-              "Trabalho com Designers",
             ].map((skill, i) => (
               <Grid size={{ xs: 6, sm: 4 }} key={i}>
                 <Typography
