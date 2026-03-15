@@ -153,7 +153,7 @@ export default function Hero() {
 
               <Button
                 component="a"
-                href="public/assets/Carlos Barbosa - Jr FullStack Developer.docx.pdf"
+                href="/Portfolio-version-1/assets/curriculo-carlos.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 variant="outlined"
