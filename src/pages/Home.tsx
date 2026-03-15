@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import About from "../components/About";
-import Projects from "../components/ProjectsSection";
+import Projects from "../components/ProjectsComponents/ProjectsSection";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Education from "../components/Education";
@@ -21,10 +21,10 @@ export default function Home() {
 
       <Header />
       <Hero />
+      <Projects />
       <About />
       <Experience />
       <Education />
-      <Projects />
       <Contact />
       <Footer />
     </>
