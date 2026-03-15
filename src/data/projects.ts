@@ -1,4 +1,4 @@
-const base = import.meta.env.BASE_URL; // adiciona o caminho base automático
+const base = import.meta.env.BASE_URL; 
 
 export interface Project {
   id: string;
@@ -6,7 +6,8 @@ export interface Project {
   description: string;
   image: string;
   github?: string;
-  demo?: string;
+  live?: string;
+  figma?: string;
   tags?: string[];
   type?: string;
   focus?: string[];
@@ -14,24 +15,13 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "clinicbeauty",
-    title: "Clinic Beauty",
-    description: "Sistema de agendamento com painel administrativo.",
-    image: `${base}projects/clinicbeauty.png`,
-    github: "https://github.com/carlosqbarbosa/clinicbeauty",
-    demo: "https://carlosqbarbosa.github.io/ClinicBeauty/",
-    tags: ["Vue.js", "Tailwind CSS", "Vite"],
-    type: "Projeto Pessoal",
-    focus: ["Frontend", "Design"],
-  },
-  {
     id: "zenup",
     title: "ZenUp",
     description:
       "Sistema de monitoramento de saúde mental de colaboradores e estudantes.",
     image: `${base}projects/zenUp.png`,
     github: "https://github.com/carlosqbarbosa/ZenUp-Frontend",
-    demo: "https://www.figma.com/design/PWq19a6yADxjTVniC6Il6o/ZenUp?node-id=0-1&t=AqU2pcbIjwc8X8kz-1",
+    figma: "https://www.figma.com/design/PWq19a6yADxjTVniC6Il6o/ZenUp?node-id=0-1&t=AqU2pcbIjwc8X8kz-1",
     tags: ["React.js", "Material UI", "Vite", "Web", "Mobile"],
     type: "Projeto Acadêmico",
     focus: ["Frontend", "Design", "Mobile", "Web"],
@@ -43,11 +33,33 @@ export const projects: Project[] = [
       "Sistema de Detecção de Fraudes em Transações Financeiras.",
     image: `${base}projects/fraudx.png`,
     github: "https://github.com/carlosqbarbosa/FraudX",
-    demo: "https://www.figma.com/design/vrfC9YIaYqdr71z2RVQoGU/FraudX---Projeto-IA?node-id=0-1&t=AhqhO2lic01Mmfv9-1",
+    figma: "https://www.figma.com/design/vrfC9YIaYqdr71z2RVQoGU/FraudX---Projeto-IA?node-id=0-1&t=AhqhO2lic01Mmfv9-1",
     tags: ["Python", "Django", "Machine Learning", "Scikit-learn"],
     type: "Projeto Acadêmico",
     focus: ["Fullstack", "Machine Learning"],
   },
+  {
+    id: "clinicbeauty",
+    title: "Clinic Beauty",
+    description: "Sistema de agendamento com painel administrativo.",
+    image: `${base}projects/clinicbeauty.png`,
+    github: "https://github.com/carlosqbarbosa/clinicbeauty",
+    live: "https://carlosqbarbosa.github.io/ClinicBeauty/",
+    tags: ["Vue.js", "Tailwind CSS", "Vite"],
+    type: "Projeto Pessoal",
+    focus: ["Frontend", "Design"],
+  },
+  {
+    id: "fintrack",
+    title: "FinTrack API",
+    description:
+      "API RESTful para controle financeiro pessoal conta com autenticação JWT e documentação Swagger.",
+    image: `${base}projects/fintrack.png`, 
+    github: "https://github.com/carlosqbarbosa/FinTrack-Server",
+    tags: ["NestJS", "TypeScript", "Prisma", "PostgreSQL", "JWT", "OpenAPI"],
+    type: "Projeto Pessoal",
+    focus: ["Backend", "API Design", "Documentação"],
+},
   {
     id: "diabetter",
     title: "dIa Better",
@@ -76,28 +88,17 @@ export const projects: Project[] = [
     description: "Rede social minimalista para compartilhar viagens.",
     image: `${base}projects/travelgram.png`,
     github: "https://github.com/carlosqbarbosa/travelgram",
-    demo: "https://carlosqbarbosa.github.io/travelgram/",
+    live: "https://carlosqbarbosa.github.io/travelgram/",
     tags: ["CSS", "HTML", "Design"],
     type: "Projeto - Curso",
     focus: ["Design", "Frontend"],
-  },
-  {
-    id: "Paginadereceita",
-    title: "Página de Receita",
-    description: "Página web para exibir receita culinária.",
-    image: `${base}projects/PaginaReceita.png`,
-    github:
-      "https://github.com/carlosqbarbosa/projeto-receitas-forma-o-fullstack",
-    tags: ["HTML", "CSS"],
-    type: "Projeto - Curso",
-    focus: ["Frontend"],
   },
   {
     id: "reforcamais",
     title: "Reforça+",
     description: "Protótipo de plataforma educacional para reforço escolar.",
     image: `${base}projects/reforcar.png`,
-    demo: "https://www.figma.com/design/iD2RxGvVDjf7qdl11LCida/REFOR%C3%87O-?node-id=0-1&t=R6xAJlcQVoyVGYzl-1",
+    figma: "https://www.figma.com/design/iD2RxGvVDjf7qdl11LCida/REFOR%C3%87O-?node-id=0-1&t=R6xAJlcQVoyVGYzl-1",
     tags: ["Figma", "Design", "Web"],
     type: "Projeto Acadêmico",
     focus: ["Design"],
@@ -108,7 +109,7 @@ export const projects: Project[] = [
     description:
       "Protótipo de aplicativo móvel para monitoramento ambiental marinho.",
     image: `${base}projects/logoConnectMar 1.png`,
-    demo: "https://www.figma.com/design/VqxxWI5rUCzo5d51W5qcxT/connectMar?node-id=1-2&t=bgKxfSvwZnXZFEA4-1",
+    figma: "https://www.figma.com/design/VqxxWI5rUCzo5d51W5qcxT/connectMar?node-id=1-2&t=bgKxfSvwZnXZFEA4-1",
     tags: ["Figma", "Design", "Mobile"],
     type: "Projeto Acadêmico",
     focus: ["Design"],
@@ -119,7 +120,7 @@ export const projects: Project[] = [
     description:
       "Protótipo de aplicativo móvel para geladeira inteligente.",
     image: `${base}projects/SmartChill.png`,
-    demo: "https://www.figma.com/design/Sorew7ohqjf7yRupGKSX7M/SmartChill?node-id=0-1&t=OE4ABl2hFXHwPr9x-1",
+    figma: "https://www.figma.com/design/Sorew7ohqjf7yRupGKSX7M/SmartChill?node-id=0-1&t=OE4ABl2hFXHwPr9x-1",
     tags: ["Figma", "Design", "Mobile"],
     type: "Projeto Acadêmico",
     focus: ["Design"],
