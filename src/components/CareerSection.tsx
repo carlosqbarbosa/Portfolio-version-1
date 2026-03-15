@@ -43,7 +43,7 @@ const education = [
   {
     period: "2024 – 2025",
     title: "Análise e Desenvolvimento de Sistemas",
-    institution: "UNIT/FITS - PE",
+    institution: "UNIT - PE",
   },
   {
     period: "2025",
