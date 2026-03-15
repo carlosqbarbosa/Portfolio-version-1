@@ -191,7 +191,7 @@ export default function Hero() {
               }}
             >
               <img
-                src="src/assets/minhaFoto.jpg"
+                src="src/assets/PhotoProfile.jpeg"
                 alt="Carlos Barbosa"
                 style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
               />
