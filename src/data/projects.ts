@@ -94,17 +94,6 @@ export const projects: Project[] = [
     focus: ["Design", "Frontend"],
   },
   {
-    id: "Paginadereceita",
-    title: "Página de Receita",
-    description: "Página web para exibir receita culinária.",
-    image: `${base}projects/PaginaReceita.png`,
-    github:
-      "https://github.com/carlosqbarbosa/projeto-receitas-forma-o-fullstack",
-    tags: ["HTML", "CSS"],
-    type: "Projeto - Curso",
-    focus: ["Frontend"],
-  },
-  {
     id: "reforcamais",
     title: "Reforça+",
     description: "Protótipo de plataforma educacional para reforço escolar.",
