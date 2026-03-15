@@ -5,8 +5,7 @@ import About from "../components/About";
 import Projects from "../components/ProjectsComponents/ProjectsSection";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import Education from "../components/Education";
-import Experience from "../components/Experience";
+import CareerSection from "../components/CareerSection"
 
 export default function Home() {
   return (
@@ -23,8 +22,7 @@ export default function Home() {
       <Hero />
       <Projects />
       <About />
-      <Experience />
-      <Education />
+      <CareerSection />
       <Contact />
       <Footer />
     </>

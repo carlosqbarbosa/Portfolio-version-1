@@ -26,7 +26,6 @@ export default function Hero() {
         overflow: "hidden",
       }}
     >
-      {/* Grid background */}
       <Box
         aria-hidden
         sx={{
@@ -40,7 +39,6 @@ export default function Hero() {
         }}
       />
 
-      {/* Glow orb */}
       <Box
         aria-hidden
         sx={{
@@ -57,13 +55,11 @@ export default function Hero() {
       />
 
       <Container sx={{ px: 3, pt: 12, pb: 8, position: "relative", zIndex: 1 }}>
-        {/* Top row: text + photo */}
         <Stack
           direction={{ xs: "column", md: "row" }}
           alignItems="center"
           gap={{ xs: 6, md: 8 }}
         >
-          {/* Text block */}
           <motion.div
             initial="hidden"
             animate="show"
