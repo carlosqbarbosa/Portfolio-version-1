@@ -1,6 +1,7 @@
 import { Box, Typography, Button, Container, Chip, Stack } from "@mui/material";
 import { ArrowDown, Code2, Palette, Zap, Rocket, Download } from "lucide-react";
 import { motion } from "framer-motion";
+import photoProfile from "../assets/PhotoProfile.jpeg";
 
 const highlights = [
   { icon: Code2,   label: "Development" },
@@ -191,7 +192,7 @@ export default function Hero() {
               }}
             >
               <img
-                src="src/assets/PhotoProfile.png"
+                src={photoProfile}
                 alt="Carlos Barbosa"
                 style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
               />
