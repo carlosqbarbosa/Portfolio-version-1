@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Figma } from "lucide-react";
+import { ExternalLink, Github, Figma, Video } from "lucide-react";
 import { Project } from "../../data/projects";
 
 interface ProjectCardProps {
@@ -116,7 +116,9 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
           )}
 
           {/* Links */}
-          <div style={{ display: "flex", gap: 16, marginTop: "auto" }}>
+          <div style={{ display: "flex", gap: 16, marginTop: "auto", flexWrap: "wrap" }}>
+            
+            {/* Frontend */}
             {project.github && (
               <a
                 href={project.github}
@@ -126,9 +128,39 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
                 onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#a78bfa"; }}
                 onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "rgba(255,255,255,0.5)"; }}
               >
-                <Github size={15} /> Code
+                <Github size={15} /> Frontend
               </a>
             )}
+
+            {/* Backend */}
+            {project.backend && (
+              <a
+                href={project.backend}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={linkStyle}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#a78bfa"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "rgba(255,255,255,0.5)"; }}
+              >
+                <Github size={15} /> Backend
+              </a>
+            )}
+
+            {/* Preview */}
+            {project.preview && (
+              <a
+                href={project.preview}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={linkStyle}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#a78bfa"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "rgba(255,255,255,0.5)"; }}
+              >
+                <Video size={15} /> Preview
+              </a>
+            )}
+
+            {/* Live */}
             {project.live && (
               <a
                 href={project.live}
@@ -141,6 +173,8 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
                 <ExternalLink size={15} /> Live
               </a>
             )}
+
+            {/* Figma */}
             {project.figma && (
               <a
                 href={project.figma}

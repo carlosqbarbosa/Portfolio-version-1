@@ -6,6 +6,8 @@ export interface Project {
   description: string;
   image: string;
   github?: string;
+  backend?: string;
+  preview?: string;
   live?: string;
   figma?: string;
   tags?: string[];
@@ -21,6 +23,7 @@ export const projects: Project[] = [
       "Sistema de monitoramento de saúde mental de colaboradores e estudantes.",
     image: `${base}projects/zenUp.png`,
     github: "https://github.com/carlosqbarbosa/ZenUp-Frontend",
+    backend: "https://github.com/carlosqbarbosa/ZenUp-Backend",
     figma: "https://www.figma.com/design/PWq19a6yADxjTVniC6Il6o/ZenUp?node-id=0-1&t=AqU2pcbIjwc8X8kz-1",
     tags: ["React.js", "Material UI", "Vite", "Web", "Mobile"],
     type: "Projeto Acadêmico",
@@ -39,6 +42,19 @@ export const projects: Project[] = [
     focus: ["Fullstack", "Machine Learning"],
   },
   {
+    id: "focuslist",
+    title: "FocusList",
+    description:
+      "Aplicação web Full Stack para gerenciamento de tarefas e aumento de produtividade, com autenticação de usuários e integração completa entre frontend e backend.",
+    image: `${base}projects/FocusList.png`,
+    github: "https://github.com/carlosqbarbosa/FocusList-client",
+    backend: "https://github.com/carlosqbarbosa/FocusList-server",
+    preview: "https://drive.google.com/file/d/1HY4AHO0QCB9Fpoy7Ix8FKHz-AwBWUDwH/view",
+    tags: ["Vue 3", "Vite", "Node.js", "JavaScript", "Pinia", "JWT"],
+    type: "Projeto Pessoal",
+    focus: ["Fullstack", "Web Development"],
+  },
+  {
     id: "clinicbeauty",
     title: "Clinic Beauty",
     description: "Sistema de agendamento com painel administrativo.",
@@ -55,7 +71,7 @@ export const projects: Project[] = [
     description:
       "API RESTful para controle financeiro pessoal conta com autenticação JWT e documentação Swagger.",
     image: `${base}projects/fintrack.png`, 
-    github: "https://github.com/carlosqbarbosa/FinTrack-Server",
+    backend: "https://github.com/carlosqbarbosa/FinTrack-Server",
     tags: ["NestJS", "TypeScript", "Prisma", "PostgreSQL", "JWT", "OpenAPI"],
     type: "Projeto Pessoal",
     focus: ["Backend", "API Design", "Documentação"],
@@ -77,7 +93,7 @@ export const projects: Project[] = [
     description:
       "Auxiliar empresas no gerenciamento das informações de seus colaboradores.",
     image: `${base}projects/SkillTrack.png`,
-    github: "https://github.com/edbbarros/Skilltrack",
+    backend: "https://github.com/edbbarros/Skilltrack",
     tags: ["Java", "APIs REST", "Spring Boot", "SQL"],
     type: "Projeto Acadêmico",
     focus: ["Fullstack"],
